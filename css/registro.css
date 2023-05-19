@@ -1,0 +1,204 @@
+.div-registro{
+
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+/*CSS do titulo da tela de registro*/
+
+.div-titulo-registro{
+
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.div-titulo-registro h1{
+
+    color: var(--corVermelha);
+    font-family: var(--fontePrincipal);
+    font-size: 40px;
+   
+}
+/*CSS texto para queo usuário preencha todos os campos do registro*/
+.div-p-titulo-registro{
+
+    width: 100%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:  0 15px;
+    box-sizing: border-box;
+}
+.div-p-titulo-registro p {
+
+    font-family: var(--fontePrincipal);
+    font-size: 10px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+/*CSS do formulário de registro*/
+.form-registro{
+
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.div-form-usuario-registro,
+.div-form-email-registro,
+.div-form-senha-registro,
+.div-form-resenha-registro{
+
+    width: 70%;
+    height: 20%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-bottom:1px solid var(--corPreta);
+}
+.div-form-usuario-registro label,
+.div-form-email-registro label,
+.div-form-senha-registro label,
+.div-form-resenha-registro label {
+
+    font-size: 14px;
+    font-family: var(--fontePrincipal);
+    margin-bottom: 5px;
+    padding-left: 15px;
+    height: 30%;
+    color: var(--corPreta);
+}
+.div-form-input-usuario-registro,
+.div-form-input-email-registro,
+.div-form-input-senha-registro,
+.div-form-input-resenha-registro{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+
+}
+.icone-usuario-registro,
+.icone-email-registro,
+.icone-senha-registro,
+.icone-resenha-registro{
+
+    width: 10%;
+    color: var(--corVermelha);
+}
+.div-form-input-usuario-registro input,
+.div-form-input-email-registro input
+{
+
+    height: 60%;
+    border: none;
+    width: 90%;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: none;
+    color: var(--corPreta);
+}
+.div-form-input-senha-registro input,
+.div-form-input-resenha-registro input{
+    height: 60%;
+    border: none;
+    width: 80%;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: none;
+    color: var(--corPreta);
+
+}
+/*CSS do botão de registro*/
+.div-btn-registro{
+
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-registro{
+
+    border: 1px solid var(--corBranca);
+    height: 65%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--corVermelha);
+    cursor: pointer;
+}
+.btn-registro p {
+
+    font-family: var(--fontePrincipal);
+    font-size: 14px;
+    color: var(--corBranca);
+    margin: 0;
+    padding: 0;
+}
+/*CSS do rodapé com direitos autorais na tela de registro*/
+.div-rodape-registro{
+    height: 9%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.div-rodape-registro p {
+
+    font-size: 10px;
+    font-family: var(--fonteSecundaria);
+    color: var(--corPreta);
+    
+}
+/*CSS animações do Registro*/
+
+.animacao-Mover-Opacidade-Registro-Entrada{
+
+    animation: animacaoRegistro-Entrada 1s;
+  }
+  @keyframes animacaoRegistro-Entrada {
+    0%{
+      transform: translateX(-60%);
+      opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .animacao-Mover-Opacidade-Registro-Saida{
+
+    animation: animacaoRegistro-Saida 1s;
+  }
+  @keyframes animacaoRegistro-Saida {
+    0%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+      transform: translateX(-60%);
+        opacity: 0;
+    }
+  }

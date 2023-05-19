@@ -1,0 +1,168 @@
+.div-banner-login {
+  height: 100%;
+  width: 50%;
+  z-index: 2;
+  position: absolute;
+  background-color: var(--corBranca);
+  top: 0;
+  right: 0;
+  border-radius: 0px 20px 20px 0px;
+  transition: all .7s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+
+/*CSS do banner com titulos*/
+.div-titulo-banner-login {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 25px;
+  background-color: var(--corAzul);
+  transition: all .7s ease-in-out;
+  border-radius: 0px 20px 0px 0px;
+}
+.div-titulo-banner-login h1 {
+  font-family: var(--fontePrincipal);
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  color: var(--corBranca);
+}
+
+/*CSS do botão para cadastro no banner*/
+.div-btn-banner-login {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 0% 0% 50% 50%;
+  background-color: var(--corAzul);
+  transition: all .7s ease-in-out;
+  
+}
+.div-btn-banner-login h2 {
+  font-family: var(--fontePrincipal);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--corBranca);
+  margin-bottom: 30px;
+  padding: 0 40px;
+}
+.btn-banner-login {
+  height: 50px;
+  width: 230px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .3s;
+  border: 1px solid var(--corBranca);
+}
+.p-btn-banner {
+  font-family: var(--fontePrincipal);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--corBranca);
+  margin: 0;
+  padding: 0;
+}
+/*Animações do Banner.*/
+.animaBanner {
+
+    transform: translatex(-100%);
+    border-radius: 20px 0px 0px 20px;
+    
+  }
+
+  .btn-banner-login:hover{
+    border-radius: 10px;
+
+  }
+
+  .background-anima{
+
+    background-color: #c0392b;
+  }
+  .background-anima-border{
+
+    background-color: #c0392b;
+    border-radius: 20px 0px 0px 0px;
+  }
+
+@keyframes animacao-btn-banner {
+  0% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+  
+}
+
+.animacao-Banner-Saida{
+  animation: mover-Banner-Saida 1.5s;
+}
+@keyframes mover-Banner-Saida {
+  0%{
+    transform:translateX(0);
+    opacity: 1;
+  }
+  100%{
+    transform:translateX(400%);
+    opacity: 0;
+  }
+}
+.animacao-Banner-Entrada{
+  animation: mover-Banner-Entrada .7s;
+}
+@keyframes mover-Banner-Entrada {
+  0%{
+    transform:translateX(-200%);
+    opacity: 0;
+  }
+  100%{
+    transform:translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+.animacao-Banner-Saida-2{
+  animation: mover-Banner-Saida-2 1s;
+}
+@keyframes mover-Banner-Saida-2 {
+  0%{
+    transform:translateX(0);
+    opacity: 1;
+  }
+  100%{
+    transform:translateX(-200%);
+    opacity: 0;
+  }
+}
+.animacao-Banner-Entrada-2{
+  animation: mover-Banner-Entrada-2 .7s;
+}
+@keyframes mover-Banner-Entrada-2 {
+  0%{
+    transform:translateX(200%);
+    opacity: 0;
+  }
+  100%{
+    transform:translateX(0);
+    opacity: 1;
+  }
+}
